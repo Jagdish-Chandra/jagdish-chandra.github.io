@@ -191,7 +191,7 @@
 
     /* ================= STATS ================= */
 
-    #stats {
+    /* #stats {
       background: var(--bg-secondary);
 
       border-top: 1px solid var(--border);
@@ -224,7 +224,97 @@
     .stat-label {
       color: var(--muted);
       font-size: 14px;
-    }
+    } */
+
+    #engineering-snapshot {
+  background: #10161e;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.snapshot-container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 100px 30px;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.snapshot-intro h2 {
+  font-size: 42px;
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  margin: 15px 0 20px;
+}
+
+.snapshot-intro h2 span {
+  color: var(--accent);
+}
+
+.snapshot-intro p {
+  color: var(--muted);
+  max-width: 430px;
+  font-size: 16px;
+}
+
+.snapshot-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.snapshot-item {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 25px;
+
+  padding: 24px 0;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.snapshot-item:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.snapshot-value {
+  color: var(--accent-light);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.snapshot-item h3 {
+  font-size: 17px;
+  margin-bottom: 3px;
+}
+
+.snapshot-item p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 800px) {
+
+  .snapshot-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 75px 25px;
+  }
+
+  .snapshot-intro h2 {
+    font-size: 34px;
+  }
+
+  .snapshot-item {
+    grid-template-columns: 80px 1fr;
+    gap: 15px;
+  }
+
+}
 
     /* ================= SECTIONS ================= */
 
@@ -699,7 +789,7 @@
 
 <!-- ================= STATS ================= -->
 
-<section id="stats">
+<!-- <section id="stats">
 
   <div class="stats-container">
 
@@ -750,6 +840,76 @@
 
       <div class="stat-label">
         ML prediction accuracy
+      </div>
+
+    </div>
+
+  </div>
+
+</section> -->
+  <section id="engineering-snapshot">
+
+  <div class="snapshot-container">
+
+    <div class="snapshot-intro">
+      <span class="section-label">Engineering Snapshot</span>
+
+      <h2>
+        Building systems where<br>
+        <span>scale meets intelligence.</span>
+      </h2>
+
+      <p>
+        My work spans distributed backend systems, production machine
+        learning and autonomous robotics — from high-throughput data
+        pipelines to models running inside real-world applications.
+      </p>
+    </div>
+
+    <div class="snapshot-items">
+
+      <div class="snapshot-item">
+        <span class="snapshot-value">200K+</span>
+        <div>
+          <h3>Telemetry events</h3>
+          <p>
+            Processed per device per day through Kafka-based
+            asynchronous pipelines.
+          </p>
+        </div>
+      </div>
+
+      <div class="snapshot-item">
+        <span class="snapshot-value">11</span>
+        <div>
+          <h3>Production services</h3>
+          <p>
+            Independently deployable microservices forming an
+            Industrial IoT platform.
+          </p>
+        </div>
+      </div>
+
+      <div class="snapshot-item">
+        <span class="snapshot-value">87%</span>
+        <div>
+          <h3>Model accuracy</h3>
+          <p>
+            Achieved by a production AI system deployed through
+            Azure ML and AKS.
+          </p>
+        </div>
+      </div>
+
+      <div class="snapshot-item">
+        <span class="snapshot-value">&lt;1h</span>
+        <div>
+          <h3>Monthly downtime</h3>
+          <p>
+            Reduced from approximately 6 hours through a more
+            resilient production architecture.
+          </p>
+        </div>
       </div>
 
     </div>
