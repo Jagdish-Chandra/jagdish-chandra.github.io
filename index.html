@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,7 @@
 
   <meta
     name="description"
-    content="Jagdish Chandra — Senior Software Engineer specializing in distributed systems, AI/ML, backend engineering and robotics."
+    content="Jagdish Chandra — Senior Software Engineer specializing in distributed systems, AI/ML, cloud platforms and intelligent robotics."
   >
 
   <link
@@ -17,6 +18,7 @@
   >
 
   <style>
+
     * {
       margin: 0;
       padding: 0;
@@ -26,8 +28,8 @@
 
     :root {
       --bg: #0b0f14;
-      --bg-secondary: #111820;
-      --card: #151d26;
+      --bg-secondary: #10161e;
+      --card: #151d27;
       --border: #263241;
       --text: #f1f5f9;
       --muted: #9ca8b7;
@@ -37,8 +39,8 @@
     }
 
     body {
-      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Helvetica, Arial, sans-serif;
+      font-family: Inter, -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
@@ -49,7 +51,7 @@
       text-decoration: none;
     }
 
-    /* NAVBAR */
+    /* ================= NAVBAR ================= */
 
     #navbar {
       position: fixed;
@@ -57,20 +59,24 @@
       left: 0;
       width: 100%;
       height: 70px;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       padding: 0 5%;
-      background: rgba(11, 15, 20, 0.9);
+
+      background: rgba(11, 15, 20, 0.92);
       backdrop-filter: blur(12px);
+
       border-bottom: 1px solid var(--border);
+
       z-index: 1000;
     }
 
     .logo {
       font-size: 22px;
       font-weight: 700;
-      letter-spacing: -0.5px;
     }
 
     .logo span {
@@ -79,7 +85,7 @@
 
     .nav-links {
       display: flex;
-      gap: 32px;
+      gap: 30px;
       list-style: none;
     }
 
@@ -90,37 +96,41 @@
     }
 
     .nav-links a:hover {
-      color: var(--text);
+      color: white;
     }
 
-    /* HERO */
+    /* ================= HERO ================= */
 
     #welcome-section {
       min-height: 100vh;
       max-width: var(--max-width);
       margin: auto;
-      padding: 180px 30px 100px;
+
+      padding: 170px 30px 100px;
+
       display: flex;
       align-items: center;
     }
 
     .hero-content {
-      max-width: 850px;
+      max-width: 900px;
     }
 
     .eyebrow {
       color: var(--accent-light);
-      font-size: 15px;
-      font-weight: 600;
+      font-size: 14px;
+      font-weight: 700;
       letter-spacing: 2px;
       text-transform: uppercase;
+
       margin-bottom: 20px;
     }
 
     #about {
-      font-size: clamp(48px, 7vw, 82px);
+      font-size: clamp(48px, 7vw, 80px);
       line-height: 1.05;
       letter-spacing: -3px;
+
       margin-bottom: 25px;
     }
 
@@ -130,37 +140,44 @@
 
     #des {
       color: var(--muted);
+
       font-size: clamp(20px, 2.5vw, 28px);
+
       max-width: 800px;
-      line-height: 1.5;
-      margin-bottom: 35px;
+
+      margin-bottom: 25px;
     }
 
     .hero-description {
-      color: #b8c2ce;
+      color: #bac4d0;
+
       max-width: 760px;
+
       font-size: 17px;
+
       margin-bottom: 35px;
     }
 
     .buttons {
       display: flex;
-      gap: 15px;
       flex-wrap: wrap;
+      gap: 14px;
     }
 
     .btn {
-      padding: 12px 22px;
-      border-radius: 6px;
+      padding: 11px 21px;
+
       border: 1px solid var(--border);
+      border-radius: 6px;
+
       font-weight: 600;
+
       transition: 0.2s;
     }
 
     .btn-primary {
       background: var(--accent);
       border-color: var(--accent);
-      color: white;
     }
 
     .btn-primary:hover {
@@ -172,20 +189,26 @@
       color: var(--accent-light);
     }
 
-    /* STATS */
+    /* ================= STATS ================= */
 
     #stats {
+      background: var(--bg-secondary);
+
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
-      background: var(--bg-secondary);
     }
 
     .stats-container {
       max-width: var(--max-width);
+
       margin: auto;
+
       padding: 45px 30px;
+
       display: grid;
+
       grid-template-columns: repeat(4, 1fr);
+
       gap: 30px;
     }
 
@@ -196,166 +219,228 @@
     .stat-number {
       font-size: 34px;
       font-weight: 700;
-      color: var(--text);
     }
 
     .stat-label {
       color: var(--muted);
       font-size: 14px;
-      margin-top: 5px;
     }
 
-    /* GENERAL SECTIONS */
+    /* ================= SECTIONS ================= */
 
     section.content-section {
       max-width: var(--max-width);
+
       margin: auto;
+
       padding: 110px 30px;
     }
 
     .section-label {
       color: var(--accent-light);
+
       text-transform: uppercase;
+
       font-size: 13px;
+
       font-weight: 700;
+
       letter-spacing: 2px;
+
       margin-bottom: 10px;
     }
 
     .section-title {
       font-size: 42px;
+
       letter-spacing: -1px;
+
       margin-bottom: 15px;
     }
 
     .section-description {
       color: var(--muted);
-      max-width: 700px;
-      margin-bottom: 50px;
+
+      max-width: 750px;
+
       font-size: 17px;
+
+      margin-bottom: 50px;
     }
 
-    /* PROJECTS */
+    /* ================= EXPERIENCE ================= */
 
-    #projects {
-      background: var(--bg);
+    .experience {
+      position: relative;
+
+      border-left: 2px solid var(--border);
+
+      padding-left: 35px;
     }
+
+    .experience-item {
+      position: relative;
+
+      margin-bottom: 65px;
+    }
+
+    .experience-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .experience-item::before {
+      content: "";
+
+      position: absolute;
+
+      left: -42px;
+      top: 5px;
+
+      width: 12px;
+      height: 12px;
+
+      background: var(--accent);
+
+      border-radius: 50%;
+    }
+
+    .experience-item h3 {
+      font-size: 28px;
+    }
+
+    .company {
+      color: var(--accent-light);
+
+      font-size: 17px;
+
+      font-weight: 600;
+
+      margin-top: 3px;
+    }
+
+    .date {
+      color: var(--muted);
+
+      font-size: 14px;
+
+      margin-bottom: 20px;
+    }
+
+    .experience-item ul {
+      padding-left: 20px;
+
+      color: var(--muted);
+
+      max-width: 950px;
+    }
+
+    .experience-item li {
+      margin-bottom: 13px;
+    }
+
+    /* ================= TECHNOLOGIES ================= */
+
+    .tech-stack {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 8px;
+
+      margin-top: 22px;
+    }
+
+    .tech {
+      background: #202a36;
+
+      color: #cbd5e1;
+
+      padding: 5px 9px;
+
+      border-radius: 4px;
+
+      font-size: 12px;
+    }
+
+    /* ================= WORK ================= */
 
     .project-grid {
       display: grid;
+
       grid-template-columns: repeat(2, 1fr);
+
       gap: 25px;
     }
 
     .project-card {
       background: var(--card);
+
       border: 1px solid var(--border);
+
       border-radius: 10px;
+
       padding: 32px;
+
       transition: 0.25s;
     }
 
     .project-card:hover {
       transform: translateY(-5px);
+
       border-color: #475569;
     }
 
     .project-number {
       color: var(--accent);
+
       font-size: 13px;
+
       font-weight: 700;
+
       margin-bottom: 15px;
     }
 
     .project-card h3 {
       font-size: 25px;
+
       margin-bottom: 12px;
     }
 
     .project-card p {
       color: var(--muted);
-      margin-bottom: 20px;
+
+      margin-bottom: 15px;
     }
 
     .project-impact {
       border-left: 3px solid var(--accent);
+
       padding-left: 15px;
+
       margin: 20px 0;
+
       color: #d7dee7;
+
       font-size: 14px;
     }
 
-    .tech-stack {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 20px;
-    }
-
-    .tech {
-      background: #202a36;
-      color: #cbd5e1;
-      padding: 5px 9px;
-      border-radius: 4px;
-      font-size: 12px;
-    }
-
-    /* EXPERIENCE */
-
-    .experience-card {
-      border-left: 2px solid var(--border);
-      padding-left: 30px;
-      position: relative;
-    }
-
-    .experience-card::before {
-      content: "";
-      position: absolute;
-      left: -7px;
-      top: 5px;
-      width: 12px;
-      height: 12px;
-      background: var(--accent);
-      border-radius: 50%;
-    }
-
-    .experience-card h3 {
-      font-size: 26px;
-    }
-
-    .company {
-      color: var(--accent-light);
-      font-weight: 600;
-      margin: 5px 0;
-    }
-
-    .date {
-      color: var(--muted);
-      font-size: 14px;
-      margin-bottom: 20px;
-    }
-
-    .experience-card ul {
-      color: var(--muted);
-      padding-left: 20px;
-    }
-
-    .experience-card li {
-      margin-bottom: 12px;
-    }
-
-    /* SKILLS */
+    /* ================= SKILLS ================= */
 
     .skills-grid {
       display: grid;
+
       grid-template-columns: repeat(2, 1fr);
+
       gap: 20px;
     }
 
     .skill-card {
       background: var(--card);
+
       border: 1px solid var(--border);
+
       padding: 25px;
+
       border-radius: 8px;
     }
 
@@ -367,11 +452,13 @@
       color: var(--muted);
     }
 
-    /* ABOUT */
+    /* ================= ABOUT ================= */
 
     .about-text {
       color: var(--muted);
+
       font-size: 17px;
+
       max-width: 850px;
     }
 
@@ -379,35 +466,45 @@
       margin-bottom: 18px;
     }
 
-    /* CONTACT */
+    /* ================= CONTACT ================= */
 
     #contact {
-      border-top: 1px solid var(--border);
       background: #080c11;
+
+      border-top: 1px solid var(--border);
+
       text-align: center;
+
       padding: 80px 30px;
     }
 
     #contact h2 {
       font-size: 40px;
+
       margin-bottom: 15px;
     }
 
     #contact p {
       color: var(--muted);
+
       margin-bottom: 30px;
     }
 
     .social-links {
       display: flex;
+
       justify-content: center;
+
       gap: 25px;
+
       flex-wrap: wrap;
     }
 
     .social-links a {
       color: var(--muted);
+
       font-size: 15px;
+
       transition: 0.2s;
     }
 
@@ -421,13 +518,17 @@
 
     footer {
       text-align: center;
+
       color: #64748b;
+
       font-size: 13px;
+
       padding: 25px;
+
       background: #080c11;
     }
 
-    /* MOBILE */
+    /* ================= MOBILE ================= */
 
     @media (max-width: 800px) {
 
@@ -476,7 +577,7 @@
       }
 
       .nav-links {
-        gap: 10px;
+        gap: 9px;
       }
 
       .nav-links a {
@@ -484,7 +585,6 @@
       }
 
       .stats-container {
-        grid-template-columns: 1fr 1fr;
         gap: 20px;
       }
 
@@ -496,12 +596,16 @@
         padding: 25px;
       }
     }
+
   </style>
+
 </head>
+
 
 <body>
 
-<!-- NAVIGATION -->
+
+<!-- ================= NAVIGATION ================= -->
 
 <nav id="navbar">
 
@@ -510,40 +614,55 @@
   </div>
 
   <ul class="nav-links">
-    <li><a href="#about-section">About</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Work</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#contact">Contact</a></li>
+
+    <li>
+      <a href="#about-section">About</a>
+    </li>
+
+    <li>
+      <a href="#experience">Experience</a>
+    </li>
+
+    <li>
+      <a href="#projects">Work</a>
+    </li>
+
+    <li>
+      <a href="#skills">Skills</a>
+    </li>
+
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+
   </ul>
 
 </nav>
 
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 
 <section id="welcome-section">
 
   <div class="hero-content">
 
     <div class="eyebrow">
-      Senior Software Engineer
+      Senior Software Engineer · 5+ Years
     </div>
 
     <h1 id="about">
-      Building <span>distributed systems</span>, AI & intelligent robotics.
+      Building <span>distributed systems</span>, AI & intelligent software.
     </h1>
 
     <p id="des">
-      I design and build production-grade backend, data and AI systems
-      that operate at scale.
+      Software engineer focused on backend systems, production AI/ML,
+      cloud platforms and robotics.
     </p>
 
     <p class="hero-description">
-      My work spans Java and Spring Boot, distributed systems, Kafka,
-      databases, cloud infrastructure, machine learning, computer vision,
-      ROS2 and robotics. I enjoy taking systems from architecture and
-      experimentation through reliable production deployment.
+      I build scalable software systems using Java, Spring Boot, Kafka,
+      Python and cloud infrastructure, with hands-on experience taking
+      machine learning systems from experimentation to production.
     </p>
 
     <div class="buttons">
@@ -578,30 +697,61 @@
 </section>
 
 
-<!-- STATS -->
+<!-- ================= STATS ================= -->
 
 <section id="stats">
 
   <div class="stats-container">
 
     <div class="stat">
-      <div class="stat-number">200K+</div>
-      <div class="stat-label">Telemetry records / device / day</div>
+
+      <div class="stat-number">
+        5+
+      </div>
+
+      <div class="stat-label">
+        Years of software engineering
+      </div>
+
     </div>
 
-    <div class="stat">
-      <div class="stat-number">11</div>
-      <div class="stat-label">Independently deployable services</div>
-    </div>
 
     <div class="stat">
-      <div class="stat-number">8×</div>
-      <div class="stat-label">Reduction in production downtime</div>
+
+      <div class="stat-number">
+        200K+
+      </div>
+
+      <div class="stat-label">
+        Telemetry records / device / day
+      </div>
+
     </div>
 
+
     <div class="stat">
-      <div class="stat-number">5+</div>
-      <div class="stat-label">Years of software engineering</div>
+
+      <div class="stat-number">
+        11
+      </div>
+
+      <div class="stat-label">
+        Independently deployable services
+      </div>
+
+    </div>
+
+
+    <div class="stat">
+
+      <div class="stat-number">
+        87%
+      </div>
+
+      <div class="stat-label">
+        ML prediction accuracy
+      </div>
+
     </div>
 
   </div>
@@ -609,7 +759,7 @@
 </section>
 
 
-<!-- ABOUT -->
+<!-- ================= ABOUT ================= -->
 
 <section
   id="about-section"
@@ -621,28 +771,34 @@
   </div>
 
   <h2 class="section-title">
-    Engineering systems from idea to production.
+    From software engineering to AI systems.
   </h2>
 
   <div class="about-text">
 
     <p>
-      I'm a Senior Software Engineer focused on backend engineering,
-      distributed systems, AI/ML and robotics.
+      I'm a Senior Software Engineer with 5+ years of experience building
+      scalable distributed systems, data-intensive applications and
+      production AI/ML systems.
     </p>
 
     <p>
-      I've worked on high-throughput systems involving asynchronous
-      processing, event-driven architectures, machine learning inference,
-      real-time telemetry, authentication and authorization, observability
-      and cloud infrastructure.
+      I started my career building full-stack Industrial IoT systems,
+      working across Spring Boot, Angular, PostgreSQL and real-time
+      telemetry pipelines.
     </p>
 
     <p>
-      I'm particularly interested in the intersection of software
-      engineering and AI — building reliable systems around machine
-      learning models, LLM applications, AI agents and intelligent
-      autonomous systems.
+      My work has since evolved toward distributed architectures,
+      event-driven systems, machine learning platforms, cloud
+      infrastructure, reinforcement learning, computer vision and
+      GenAI.
+    </p>
+
+    <p>
+      I enjoy working at the intersection of strong software engineering
+      and applied AI — particularly when models need to operate reliably
+      inside real production systems.
     </p>
 
   </div>
@@ -650,7 +806,7 @@
 </section>
 
 
-<!-- EXPERIENCE -->
+<!-- ================= EXPERIENCE ================= -->
 
 <section
   id="experience"
@@ -665,70 +821,151 @@
     Professional experience
   </h2>
 
-  <div class="experience-card">
+  <p class="section-description">
+    A progression from full-stack Industrial IoT development to
+    distributed systems, production AI/ML and robotics.
+  </p>
 
-    <h3>Senior Software Engineer</h3>
 
-    <div class="company">
-      Resonating Mindz Pvt. Ltd.
+  <div class="experience">
+
+
+    <!-- SENIOR -->
+
+    <div class="experience-item">
+
+      <h3>
+        Senior Software Engineer
+      </h3>
+
+      <div class="company">
+        Resonating Mindz Pvt. Ltd.
+      </div>
+
+      <div class="date">
+        Jan 2023 — Present
+      </div>
+
+      <ul>
+
+        <li>
+          Architected and implemented a scalable Industrial IoT
+          microservices platform using Spring Boot, Kafka, Docker,
+          PostgreSQL, Redis, NGINX, Grafana and ML inference services,
+          resulting in 11 independently deployable microservices.
+        </li>
+
+        <li>
+          Engineered high-throughput telemetry processing using
+          Kafka-based asynchronous messaging and Redis-backed
+          idempotency, handling 200K+ records per device per day while
+          preventing duplicate processing and recovering from transient
+          downstream failures.
+        </li>
+
+        <li>
+          Built a centralized licensing platform with a single
+          source-of-truth licensing service and Spring AOP enforcement
+          across 100+ REST, WebSocket and administrative APIs.
+        </li>
+
+        <li>
+          Designed configurable RBAC with custom roles, granular
+          resource-level permissions, JWT authorization and Spring
+          Security for 50+ users across 6+ roles.
+        </li>
+
+        <li>
+          Built an end-to-end AI system for repair-order completion,
+          including Azure ML pipelines, predictive model training and
+          inference APIs deployed on AKS, achieving up to 87% prediction
+          accuracy.
+        </li>
+
+        <li>
+          Led development of an autonomous surveillance robot using
+          reinforcement learning for locomotion and navigation together
+          with fine-tuned YOLO models for real-time perception.
+        </li>
+
+      </ul>
+
+      <div class="tech-stack">
+
+        <span class="tech">Java</span>
+        <span class="tech">Spring Boot</span>
+        <span class="tech">Kafka</span>
+        <span class="tech">Redis</span>
+        <span class="tech">PostgreSQL</span>
+        <span class="tech">Docker</span>
+        <span class="tech">Azure ML</span>
+        <span class="tech">AKS</span>
+        <span class="tech">ML</span>
+        <span class="tech">YOLO</span>
+        <span class="tech">Reinforcement Learning</span>
+
+      </div>
+
     </div>
 
-    <div class="date">
-      Jan 2023 — Present
-    </div>
 
-    <ul>
+    <!-- SOFTWARE ENGINEER -->
 
-      <li>
-        Architected and implemented a scalable microservices platform
-        consisting of 11 independently deployable services.
-      </li>
+    <div class="experience-item">
 
-      <li>
-        Designed Kafka-based asynchronous processing pipelines capable
-        of handling 200K+ telemetry records per device per day.
-      </li>
+      <h3>
+        Software Engineer
+      </h3>
 
-      <li>
-        Implemented Redis-backed idempotency mechanisms and retry/backoff
-        strategies to handle message redelivery and transient downstream
-        failures.
-      </li>
+      <div class="company">
+        Resonating Mindz Pvt. Ltd.
+      </div>
 
-      <li>
-        Built ML inference services and integrated machine-learning
-        workflows into production backend systems.
-      </li>
+      <div class="date">
+        Dec 2020 — Dec 2022
+      </div>
 
-      <li>
-        Designed granular RBAC with resource-level permissions,
-        JWT-based authentication and Spring Security.
-      </li>
+      <ul>
 
-      <li>
-        Built centralized licensing and API authorization mechanisms
-        across 100+ REST, WebSocket and administrative APIs.
-      </li>
+        <li>
+          Delivered a production monitoring system for an Industrial IoT
+          platform using Spring Boot, Angular and PostgreSQL, building
+          end-to-end telemetry pipelines, REST APIs, database models and
+          dashboards for real-time analytics and KPI visualization.
+        </li>
 
-      <li>
-        Improved production reliability and reduced average downtime
-        from approximately 6 hours/month to less than 1 hour/month.
-      </li>
+        <li>
+          Achieved 99.5% production data accuracy across the monitoring
+          system.
+        </li>
 
-    </ul>
+        <li>
+          Developed a predictive maintenance system in Python for
+          industrial motors and equipment, exposing ML prediction
+          services through Flask APIs and enabling real-time alerts
+          and alarms.
+        </li>
 
-    <div class="tech-stack">
+        <li>
+          Replaced manual file-based industrial gateway configuration
+          with a full-stack Angular and Node.js application, reducing
+          configuration errors and device setup effort.
+        </li>
 
-      <span class="tech">Java</span>
-      <span class="tech">Spring Boot</span>
-      <span class="tech">Kafka</span>
-      <span class="tech">Redis</span>
-      <span class="tech">PostgreSQL</span>
-      <span class="tech">Docker</span>
-      <span class="tech">NGINX</span>
-      <span class="tech">Grafana</span>
-      <span class="tech">Python</span>
-      <span class="tech">ML</span>
+      </ul>
+
+      <div class="tech-stack">
+
+        <span class="tech">Java</span>
+        <span class="tech">Spring Boot</span>
+        <span class="tech">Angular</span>
+        <span class="tech">PostgreSQL</span>
+        <span class="tech">Python</span>
+        <span class="tech">Flask</span>
+        <span class="tech">Node.js</span>
+        <span class="tech">Machine Learning</span>
+
+      </div>
 
     </div>
 
@@ -737,7 +974,7 @@
 </section>
 
 
-<!-- SELECTED WORK -->
+<!-- ================= SELECTED WORK ================= -->
 
 <section
   id="projects"
@@ -749,19 +986,19 @@
   </div>
 
   <h2 class="section-title">
-    Systems I've built
+    What I build
   </h2>
 
   <p class="section-description">
-    A selection of engineering work spanning distributed systems,
-    machine learning, computer vision and robotics.
+    Selected areas of engineering work across distributed systems,
+    machine learning, cloud infrastructure and robotics.
   </p>
 
 
   <div class="project-grid">
 
 
-    <!-- PROJECT 1 -->
+    <!-- DISTRIBUTED SYSTEMS -->
 
     <div class="project-card">
 
@@ -769,213 +1006,229 @@
         01 / DISTRIBUTED SYSTEMS
       </div>
 
-      <h3>Industrial IoT & Analytics Platform</h3>
+      <h3>
+        Industrial IoT Platform
+      </h3>
 
       <p>
-        Designed a production-grade microservices platform for real-time
-        industrial telemetry, analytics and ML-powered insights.
+        Production-grade Industrial IoT platform built around
+        microservices and event-driven telemetry processing.
       </p>
 
       <div class="project-impact">
-        200K+ telemetry records/device/day ·
-        11 microservices · 8× downtime reduction
+        11 microservices · 200K+ records/device/day ·
+        downtime reduced from ~6 hours/month to &lt;1 hour/month
       </div>
 
       <p>
-        Built event-driven processing using Kafka, Redis-backed
-        idempotency, retry/backoff handling, PostgreSQL persistence,
-        ML inference and real-time observability.
+        Designed asynchronous Kafka pipelines, Redis-backed idempotency,
+        fault recovery, API security, licensing, RBAC and observability.
       </p>
 
       <div class="tech-stack">
-        <span class="tech">Java</span>
+
         <span class="tech">Spring Boot</span>
         <span class="tech">Kafka</span>
         <span class="tech">Redis</span>
         <span class="tech">PostgreSQL</span>
         <span class="tech">Docker</span>
         <span class="tech">Grafana</span>
-        <span class="tech">ML</span>
+
       </div>
 
     </div>
 
 
-    <!-- PROJECT 2 -->
+    <!-- AI -->
 
     <div class="project-card">
 
       <div class="project-number">
-        02 / MACHINE LEARNING
+        02 / PRODUCTION AI
       </div>
 
-      <h3>Predictive Maintenance</h3>
+      <h3>
+        AI Repair-Order Completion
+      </h3>
 
       <p>
-        Built a machine-learning workflow for predicting repair outcomes
-        from a large repair-order dataset.
+        End-to-end machine learning system designed to identify omitted
+        repair items in insurance claims.
       </p>
 
       <div class="project-impact">
-        300K repair orders · high-dimensional sparse features · LightGBM
+        Azure ML pipelines · model training · AKS inference ·
+        up to 87% prediction accuracy
       </div>
 
       <p>
-        Worked with large sparse feature matrices, categorical
-        preprocessing and production-oriented model training and
-        inference workflows.
+        Built the ML workflow from model development through deployment
+        as production inference APIs.
       </p>
 
       <div class="tech-stack">
+
         <span class="tech">Python</span>
-        <span class="tech">LightGBM</span>
-        <span class="tech">Scikit-learn</span>
+        <span class="tech">Azure ML</span>
+        <span class="tech">AKS</span>
         <span class="tech">Machine Learning</span>
-        <span class="tech">Sparse Matrices</span>
+
       </div>
 
     </div>
 
 
-    <!-- PROJECT 3 -->
+    <!-- PREDICTIVE MAINTENANCE -->
 
     <div class="project-card">
 
       <div class="project-number">
-        03 / COMPUTER VISION
+        03 / MACHINE LEARNING
       </div>
 
-      <h3>Real-Time Vision & Tracking Pipeline</h3>
+      <h3>
+        Predictive Maintenance
+      </h3>
 
       <p>
-        Developed a computer-vision pipeline for object detection,
-        tracking and event generation in a robotics environment.
+        Machine learning system for fault prediction in industrial
+        motors and equipment.
       </p>
 
       <div class="project-impact">
-        YOLO-based detection + ByteTrack tracking + ROS2 integration
+        ML predictions integrated directly into Industrial IoT
+        monitoring and real-time alerting.
       </div>
 
       <p>
-        Integrated object detection and tracking into a ROS2-based
-        architecture for downstream event processing and robot behavior.
+        Developed models in Python and exposed predictions through
+        Flask APIs for integration with the monitoring platform.
       </p>
 
       <div class="tech-stack">
+
         <span class="tech">Python</span>
+        <span class="tech">Scikit-learn</span>
+        <span class="tech">Flask</span>
+        <span class="tech">ML</span>
+
+      </div>
+
+    </div>
+
+
+    <!-- ROBOTICS -->
+
+    <div class="project-card">
+
+      <div class="project-number">
+        04 / ROBOTICS & AI
+      </div>
+
+      <h3>
+        Autonomous Surveillance Robot
+      </h3>
+
+      <p>
+        Autonomous robotic system combining reinforcement learning,
+        computer vision and navigation.
+      </p>
+
+      <div class="project-impact">
+        RL policies for locomotion & navigation +
+        YOLO-based real-time perception
+      </div>
+
+      <p>
+        Worked across policy training and AI-driven perception to enable
+        autonomous decision-making in dynamic environments.
+      </p>
+
+      <div class="tech-stack">
+
+        <span class="tech">Reinforcement Learning</span>
         <span class="tech">YOLO</span>
-        <span class="tech">ByteTrack</span>
-        <span class="tech">ROS2</span>
-        <span class="tech">OpenCV</span>
-      </div>
-
-    </div>
-
-
-    <!-- PROJECT 4 -->
-
-    <div class="project-card">
-
-      <div class="project-number">
-        04 / ROBOTICS & RL
-      </div>
-
-      <h3>Autonomous Robotics & Reinforcement Learning</h3>
-
-      <p>
-        Worked with simulation-based robotics and reinforcement learning
-        using Isaac Sim, Isaac Lab and ROS2.
-      </p>
-
-      <div class="project-impact">
-        Simulation-based training · PPO · LiDAR-based perception
-      </div>
-
-      <p>
-        Explored navigation, obstacle avoidance and policy learning
-        workflows for autonomous robotic systems using simulation
-        environments and reinforcement learning.
-      </p>
-
-      <div class="tech-stack">
-        <span class="tech">ROS2</span>
-        <span class="tech">Isaac Sim</span>
         <span class="tech">Isaac Lab</span>
-        <span class="tech">RL</span>
-        <span class="tech">PPO</span>
-        <span class="tech">LiDAR</span>
+        <span class="tech">ROS2</span>
+        <span class="tech">Computer Vision</span>
+
       </div>
 
     </div>
 
 
-    <!-- PROJECT 5 -->
+    <!-- PLATFORM ENGINEERING -->
 
     <div class="project-card">
 
       <div class="project-number">
-        05 / BACKEND ENGINEERING
+        05 / PLATFORM ENGINEERING
       </div>
 
-      <h3>Reliable Event Processing</h3>
+      <h3>
+        Licensing & Authorization Platform
+      </h3>
 
       <p>
-        Designed reliability patterns for distributed event processing
-        where duplicate messages, retries and downstream failures must
-        be handled safely.
+        Centralized licensing and access-control architecture for a
+        multi-service application platform.
       </p>
 
       <div class="project-impact">
-        Idempotency · retry/backoff · asynchronous processing
+        100+ APIs · 50+ users · 6+ roles · resource-level authorization
       </div>
 
       <p>
-        Applied distributed-systems patterns to ensure safe message
-        processing while maintaining throughput and resilience.
+        Implemented centralized licensing with Spring AOP and
+        configurable RBAC using JWT and Spring Security.
       </p>
 
       <div class="tech-stack">
-        <span class="tech">Kafka</span>
-        <span class="tech">Redis</span>
-        <span class="tech">Java</span>
-        <span class="tech">Spring Boot</span>
-        <span class="tech">Distributed Systems</span>
+
+        <span class="tech">Spring Security</span>
+        <span class="tech">JWT</span>
+        <span class="tech">Spring AOP</span>
+        <span class="tech">RBAC</span>
+
       </div>
 
     </div>
 
 
-    <!-- PROJECT 6 -->
+    <!-- AI ENGINEERING -->
 
     <div class="project-card">
 
       <div class="project-number">
-        06 / AI ENGINEERING
+        06 / GENAI
       </div>
 
-      <h3>AI & Agentic Systems</h3>
+      <h3>
+        Generative AI & Agentic Systems
+      </h3>
 
       <p>
-        Exploring production-oriented AI engineering patterns around
-        LLM applications, RAG, AI agents and tool-enabled systems.
+        Exploring production-oriented applications of LLMs and
+        agentic AI alongside traditional software engineering.
       </p>
 
       <div class="project-impact">
-        LLM applications · RAG · agents · MCP · AI system design
+        LLMs · GenAI · AI Agents · RAG · tool-enabled systems
       </div>
 
       <p>
-        Focused on building reliable AI applications with retrieval,
-        tool use, guardrails, evaluation and integration with existing
-        software systems.
+        Focused on combining AI capabilities with reliable backend
+        systems, APIs, data pipelines and application-level controls.
       </p>
 
       <div class="tech-stack">
+
         <span class="tech">LLMs</span>
-        <span class="tech">RAG</span>
+        <span class="tech">GenAI</span>
         <span class="tech">AI Agents</span>
-        <span class="tech">MCP</span>
+        <span class="tech">RAG</span>
         <span class="tech">Python</span>
+
       </div>
 
     </div>
@@ -985,7 +1238,7 @@
 </section>
 
 
-<!-- SKILLS -->
+<!-- ================= SKILLS ================= -->
 
 <section
   id="skills"
@@ -993,51 +1246,100 @@
 >
 
   <div class="section-label">
-    Engineering
+    Technical Skills
   </div>
 
   <h2 class="section-title">
-    Technical toolkit
+    Engineering toolkit
   </h2>
-
-  <p class="section-description">
-    Technologies I use across backend systems, distributed architectures,
-    AI/ML and robotics.
-  </p>
-
 
   <div class="skills-grid">
 
-    <div class="skill-card">
-      <h3>Backend & Distributed Systems</h3>
-      <p>
-        Java · Spring Boot · Microservices · REST APIs · Kafka ·
-        Redis · PostgreSQL · WebSockets · Distributed Systems
-      </p>
-    </div>
 
     <div class="skill-card">
-      <h3>AI & Machine Learning</h3>
+
+      <h3>
+        Languages
+      </h3>
+
       <p>
-        Python · LightGBM · Scikit-learn · ML inference ·
-        Computer Vision · LLMs · RAG · AI Agents
+        Java · Python · JavaScript · C++
       </p>
+
     </div>
 
-    <div class="skill-card">
-      <h3>Robotics</h3>
-      <p>
-        ROS2 · Isaac Sim · Isaac Lab · Reinforcement Learning ·
-        LiDAR · YOLO · ByteTrack · Robot Navigation
-      </p>
-    </div>
 
     <div class="skill-card">
-      <h3>Infrastructure & Cloud</h3>
+
+      <h3>
+        Backend & Distributed Systems
+      </h3>
+
       <p>
-        Docker · Linux · NGINX · Grafana · Azure · GCP ·
-        PostgreSQL · Containerized deployments
+        Spring Boot · Spring Security · Spring AOP ·
+        Multithreading · Kafka · Microservices ·
+        Event-Driven Architecture · REST · WebSocket ·
+        Flask · Node.js · Express.js · JWT
       </p>
+
+    </div>
+
+
+    <div class="skill-card">
+
+      <h3>
+        Databases & Data
+      </h3>
+
+      <p>
+        PostgreSQL · MySQL · Redis · Snowflake ·
+        Apache Spark · Elasticsearch
+      </p>
+
+    </div>
+
+
+    <div class="skill-card">
+
+      <h3>
+        Cloud & DevOps
+      </h3>
+
+      <p>
+        Docker · Azure ML · AKS · Azure Data Factory ·
+        Azure Data Lake · Azure Synapse · Microsoft Fabric ·
+        AWS · GCP · Jenkins CI/CD
+      </p>
+
+    </div>
+
+
+    <div class="skill-card">
+
+      <h3>
+        AI & Machine Learning
+      </h3>
+
+      <p>
+        Scikit-learn · TensorFlow · Machine Learning ·
+        YOLO · Reinforcement Learning · GenAI ·
+        LLMs · AI Agents
+      </p>
+
+    </div>
+
+
+    <div class="skill-card">
+
+      <h3>
+        Robotics & Computer Vision
+      </h3>
+
+      <p>
+        Isaac Lab · ROS2 · YOLO · Computer Vision ·
+        NVIDIA Jetson Orin · Reinforcement Learning
+      </p>
+
     </div>
 
   </div>
@@ -1045,15 +1347,38 @@
 </section>
 
 
-<!-- CONTACT -->
+<!-- ================= EDUCATION ================= -->
+
+<section
+  class="content-section"
+>
+
+  <div class="section-label">
+    Education
+  </div>
+
+  <h2 class="section-title">
+    IIT Dharwad
+  </h2>
+
+  <p class="section-description">
+    Bachelor of Technology in Electrical Engineering · 2020
+  </p>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
 
 <section id="contact">
 
-  <h2>Let's build something interesting.</h2>
+  <h2>
+    Let's build something interesting.
+  </h2>
 
   <p>
-    I'm interested in challenging engineering problems involving
-    distributed systems, AI and intelligent software.
+    Interested in distributed systems, AI engineering,
+    machine learning and intelligent software.
   </p>
 
   <div class="social-links">
@@ -1085,9 +1410,12 @@
 
 
 <footer>
-  © 2026 Jagdish Chandra · Built with HTML & CSS
+
+  © 2026 Jagdish Chandra
+
 </footer>
 
 
 </body>
+
 </html>
