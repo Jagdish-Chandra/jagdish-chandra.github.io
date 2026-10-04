@@ -1,309 +1,1093 @@
-<!Doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>Jagdish Chandra</title>
-<style>
-  #navbar{
-    text-align:right;
-    position:fixed;
-    padding-top:20px;
-    width:99%;
-    height:50px;
-    top:0px;
-    background-color:#a83232;
-  }
-  .nav-link{
-    text-decoration:none;
-    margin-right:40px;
-    font-size:22px;
-    color:white;
-  }
-  #welcome-section{
-    background-color:#333333;
-    padding-top:40vh;
-    height:60vh;
-    width:100%;
-    text-align:center;
-    }
-  #about{
-    color:white;
-    font-size:50px;
-  }
-  #des{
-    color:#a83232;
-    font-size:30px;
-    margin-top:-35px;
-  }
-  #projects{
-    background-color:#6f92dc;
-    padding-top:5vh;
-    text-align:center;
-    width:auto;
-    height:auto;
-    padding-bottom:5vh;
-  }
-  #work{
-   color:white;
-   text-decoration:underline;
-    font-size:45px;
-  }
-  .project-tile{
-    border:1px solid black;
-    width:300px;
-    height:350px;
-    background-color:#606060;
-    margin-bottom:5vh;
-  }
-  .img{
-    width:300px;
-    height:300px;
-    margin-bottom:2vh;
-  }
-  .title{
-    text-decoration:none;
-    color:white;
-    text-align:center;
-    font-size:20px;
-    padding-bottom:6vh;
-  }
-  .tile-container{
-    height:auto;
-    margin-top:20vh;
-     margin-right:13.2vw;
-    margin-bottom:10vh;
-  }
-  .tile-container1{
-    height:auto;
-    margin-top:10vh;
-    margin-bottom:10vh;
-  }
-  .title1{
-    text-decoration:none;
-    color:white;
-    width:301px;
-    text-align:center;
-    font-size:20px;
-    margin-top:0px;
-    padding-top:20px;
-    padding-bottom:20px;
-    background-color:#606060;
-  }
-  .project-tile1{
-    border:1px solid black;
-    width:300px;
-    height:300px;
-    margin-top:5vh;
-    background-color:white;
-    font-size:17px;
-    color:black;
-  }
-  .list{
-    margin-left:-2vw;
-    color:white;
-    font-size:30px;
-  }
-  .fa{
-  font-size: 1.5vh;
-  width: 1.5vh;
-  text-align: center;
-  text-decoration: none;
-  margin-left:2vw;
-  }
-  .fa:hover {
-  opacity: 0.7;
-  }
-  .fa-facebook {
-  background: white;
-  color:#262626;
-  }
-   .fa-linkedin {
-  background: white;
-  color:#262626;
-  }
-   .fa-github {
-  background: white;
-  color:#262626;
-  }
-  .fa-envelope {
-  background: white;
-  color:#262626;
-  }
-  .fa-mobile-phone {
-  background: white;
-  color:#262626;
-  }
-  #contact{
-    background-color:#2F2F2F;
-    height:3vh;
-    text-align:center;
-   margin-top:2vh;
-   margin-bottom:0px;
-  }
-  .label{
-    text-decoration:none;
-    color:white;
-    font-size:1.5vh;
-  }
-  .label:hover{
-    opacity: 0.7;
-  }
-   .title:hover{
-    opacity:0.7;
-  }
-  .img:hover{
-    opacity:0.7;
-   }
- hr{
-margin-top:20px;
-  border-top:4px solid #a83232;}
-  
-  @media(min-width:800px){
-    .tile-container{
-     display:flex;
-    justify-content:space-between;
-    margin-left:13.2vw;
-    }
-    .tile-container1{
-     display:flex;
-    justify-content:space-between;
-     margin-left:13.2vw;
-    margin-right:13.2vw;
-    }
-    .list{
-      margin-left:-900px;
-    margin-bottom:50px;
-    }
-    .tile-container{
-      
-    }
-    .fa{
-  font-size: 20px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin-left:30px;
-  }
-     #contact{
-    background-color:#2F2F2F;
-    height:20px;
-    text-align:center;
-   margin-top:20px;
-   margin-bottom:0px;
-   padding-botoom:0vh;
-  }
-    .label{
-    text-decoration:none;
-    color:white;
-    font-size:20px;
-  }
-    .project-tile{
-    border:1px solid black;
-    width:350px;
-    height:400px;
-    background-color:#606060;
-  }
-    .img{
-    width:350px;
-    height:350px;
-    margin-bottom:2vh;
-  }
-    .title{
-    text-decoration:none;
-    color:white;
-    text-align:center;
-    font-size:1.5vw;
-    padding-bottom:6vh;
-  }
-  }
-  
- </style>  
-</head>
-<body>
-<nav id="navbar">
-<a href="#about" class="nav-link">About</a>
-<a href="#work" class="nav-link">Work</a>
-<a href="#contact" class="nav-link">Contact</a>
-</nav>
-<section id="welcome-section">
-<h1 id="about">Hey I am Jagdish Chandra</h1>
-<p id="des">An undergraduate from IIT Dharwad<p>
-</section>
-<section id="projects">
-  
-<h1 id="work">These are some of my projects</h1>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <li class="list">Web Development:</li>
-  <div class="tile-container">
-  <div class="project-tile">
-   <a href="https://codepen.io/jagdish-chandra/full/WNxGKPG" target="_blank"><img class="img" src="https://user-images.githubusercontent.com/66984906/97701757-efe33a80-1ad3-11eb-950d-32a73e68ffbf.PNG" alt="Capture" border="0"></a>
-    <a href="https://codepen.io/jagdish-chandra/full/WNxGKPG" target="_blank" class="title">JavaScript Calculator</a>
-       </div>
-  <div class="project-tile">
-   <a href="https://codepen.io/jagdish-chandra/full/wvWgZqK" target="_blank"><img class="img" src="https://user-images.githubusercontent.com/66984906/97701711-d8a44d00-1ad3-11eb-8c49-ecdcb89ca126.PNG" alt="Capture1" border="0"></a>
-    <a href="https://codepen.io/jagdish-chandra/full/wvWgZqK" target="_blank" class="title">25+5 Clock</a>
-       </div>
-    <div class="project-tile">
-   <a href="https://codepen.io/jagdish-chandra/full/wvWwBrJ" target="_blank"><img class="img" src="https://user-images.githubusercontent.com/66984906/97701817-06899180-1ad4-11eb-929f-505f8d2fe6fa.PNG" alt="Capture1" border="0"></a>
-    <a href="https://codepen.io/jagdish-chandra/full/wvWwBrJ" target="_blank" class="title">Random Quote Machine</a>
-       </div>
+  <title>Jagdish Chandra | Senior Software Engineer</title>
+
+  <meta
+    name="description"
+    content="Jagdish Chandra — Senior Software Engineer specializing in distributed systems, AI/ML, backend engineering and robotics."
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --bg: #0b0f14;
+      --bg-secondary: #111820;
+      --card: #151d26;
+      --border: #263241;
+      --text: #f1f5f9;
+      --muted: #9ca8b7;
+      --accent: #ef4444;
+      --accent-light: #f87171;
+      --max-width: 1150px;
+    }
+
+    body {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* NAVBAR */
+
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5%;
+      background: rgba(11, 15, 20, 0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-size: 15px;
+      transition: 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    /* HERO */
+
+    #welcome-section {
+      min-height: 100vh;
+      max-width: var(--max-width);
+      margin: auto;
+      padding: 180px 30px 100px;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      color: var(--accent-light);
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    #about {
+      font-size: clamp(48px, 7vw, 82px);
+      line-height: 1.05;
+      letter-spacing: -3px;
+      margin-bottom: 25px;
+    }
+
+    #about span {
+      color: var(--accent);
+    }
+
+    #des {
+      color: var(--muted);
+      font-size: clamp(20px, 2.5vw, 28px);
+      max-width: 800px;
+      line-height: 1.5;
+      margin-bottom: 35px;
+    }
+
+    .hero-description {
+      color: #b8c2ce;
+      max-width: 760px;
+      font-size: 17px;
+      margin-bottom: 35px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 12px 22px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-light);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent);
+      color: var(--accent-light);
+    }
+
+    /* STATS */
+
+    #stats {
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      background: var(--bg-secondary);
+    }
+
+    .stats-container {
+      max-width: var(--max-width);
+      margin: auto;
+      padding: 45px 30px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 34px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .stat-label {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    /* GENERAL SECTIONS */
+
+    section.content-section {
+      max-width: var(--max-width);
+      margin: auto;
+      padding: 110px 30px;
+    }
+
+    .section-label {
+      color: var(--accent-light);
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-size: 42px;
+      letter-spacing: -1px;
+      margin-bottom: 15px;
+    }
+
+    .section-description {
+      color: var(--muted);
+      max-width: 700px;
+      margin-bottom: 50px;
+      font-size: 17px;
+    }
+
+    /* PROJECTS */
+
+    #projects {
+      background: var(--bg);
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .project-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 32px;
+      transition: 0.25s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      border-color: #475569;
+    }
+
+    .project-number {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .project-card h3 {
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    .project-card p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .project-impact {
+      border-left: 3px solid var(--accent);
+      padding-left: 15px;
+      margin: 20px 0;
+      color: #d7dee7;
+      font-size: 14px;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
+    .tech {
+      background: #202a36;
+      color: #cbd5e1;
+      padding: 5px 9px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+
+    /* EXPERIENCE */
+
+    .experience-card {
+      border-left: 2px solid var(--border);
+      padding-left: 30px;
+      position: relative;
+    }
+
+    .experience-card::before {
+      content: "";
+      position: absolute;
+      left: -7px;
+      top: 5px;
+      width: 12px;
+      height: 12px;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+
+    .experience-card h3 {
+      font-size: 26px;
+    }
+
+    .company {
+      color: var(--accent-light);
+      font-weight: 600;
+      margin: 5px 0;
+    }
+
+    .date {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .experience-card ul {
+      color: var(--muted);
+      padding-left: 20px;
+    }
+
+    .experience-card li {
+      margin-bottom: 12px;
+    }
+
+    /* SKILLS */
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .skill-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 25px;
+      border-radius: 8px;
+    }
+
+    .skill-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .skill-card p {
+      color: var(--muted);
+    }
+
+    /* ABOUT */
+
+    .about-text {
+      color: var(--muted);
+      font-size: 17px;
+      max-width: 850px;
+    }
+
+    .about-text p {
+      margin-bottom: 18px;
+    }
+
+    /* CONTACT */
+
+    #contact {
+      border-top: 1px solid var(--border);
+      background: #080c11;
+      text-align: center;
+      padding: 80px 30px;
+    }
+
+    #contact h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    #contact p {
+      color: var(--muted);
+      margin-bottom: 30px;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .social-links a {
+      color: var(--muted);
+      font-size: 15px;
+      transition: 0.2s;
+    }
+
+    .social-links a:hover {
+      color: var(--accent-light);
+    }
+
+    .social-links i {
+      margin-right: 6px;
+    }
+
+    footer {
+      text-align: center;
+      color: #64748b;
+      font-size: 13px;
+      padding: 25px;
+      background: #080c11;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+
+      #navbar {
+        padding: 0 20px;
+      }
+
+      .nav-links {
+        gap: 15px;
+      }
+
+      .nav-links a {
+        font-size: 13px;
+      }
+
+      #welcome-section {
+        padding: 140px 25px 80px;
+      }
+
+      #about {
+        letter-spacing: -2px;
+      }
+
+      .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .project-grid,
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section.content-section {
+        padding: 80px 25px;
+      }
+
+      .section-title {
+        font-size: 34px;
+      }
+    }
+
+    @media (max-width: 500px) {
+
+      .logo {
+        font-size: 18px;
+      }
+
+      .nav-links {
+        gap: 10px;
+      }
+
+      .nav-links a {
+        font-size: 11px;
+      }
+
+      .stats-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .stat-number {
+        font-size: 27px;
+      }
+
+      .project-card {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav id="navbar">
+
+  <div class="logo">
+    Jagdish<span>.</span>
   </div>
-  
-  <div class="tile-container">
-  <div class="project-tile">
-   <a href="https://codepen.io/jagdish-chandra/full/zYBYqQv" target="_blank"><img class="img" src="https://user-images.githubusercontent.com/66984906/97701772-f70a4880-1ad3-11eb-9ecf-26b96cb03767.PNG" alt="Capture" border="0"></a>
-    <a href="https://codepen.io/jagdish-chandra/full/zYBYqQv" target="_blank" class="title">Drum Machine</a>
-       </div>
-  <div class="project-tile">
-   <a href="https://codepen.io/jagdish-chandra/full/gOrqvaO" target="_blank"><img class="img" src="https://user-images.githubusercontent.com/66984906/97701835-0be6dc00-1ad4-11eb-85cd-6b6652e5d4f7.PNG" alt="Capture1" border="0"></a>
-    <a href="https://codepen.io/jagdish-chandra/full/gOrqvaO" target="_blank" class="title">Tribute Page</a>
-       </div>
-    <div class="project-tile">
-   <a href="https://codepen.io/jagdish-chandra/full/GRZezwg" target="_blank"><img class="img" src="https://user-images.githubusercontent.com/66984906/97701731-e2c64b80-1ad3-11eb-9fbe-1b88c0c889d1.PNG" alt="Capture1" border="0"></a>
-    <a href="https://codepen.io/jagdish-chandra/full/GRZezwg" target="_blank" class="title">Technical Documentation Page</a>
-       </div>
+
+  <ul class="nav-links">
+    <li><a href="#about-section">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section id="welcome-section">
+
+  <div class="hero-content">
+
+    <div class="eyebrow">
+      Senior Software Engineer
+    </div>
+
+    <h1 id="about">
+      Building <span>distributed systems</span>, AI & intelligent robotics.
+    </h1>
+
+    <p id="des">
+      I design and build production-grade backend, data and AI systems
+      that operate at scale.
+    </p>
+
+    <p class="hero-description">
+      My work spans Java and Spring Boot, distributed systems, Kafka,
+      databases, cloud infrastructure, machine learning, computer vision,
+      ROS2 and robotics. I enjoy taking systems from architecture and
+      experimentation through reliable production deployment.
+    </p>
+
+    <div class="buttons">
+
+      <a
+        class="btn btn-primary"
+        href="#projects"
+      >
+        View my work
+      </a>
+
+      <a
+        class="btn btn-secondary"
+        href="https://github.com/Jagdish-Chandra"
+        target="_blank"
+      >
+        GitHub
+      </a>
+
+      <a
+        class="btn btn-secondary"
+        href="https://www.linkedin.com/in/jagdish-chandra-b58168199/"
+        target="_blank"
+      >
+        LinkedIn
+      </a>
+
+    </div>
+
   </div>
-  <li class="list">Academic Projects:</li>
-<div class="tile-container1">
-   <div class="project-tile1">
-     <h1 class="title1">Charge Pump</h1>
-     <ul>
-     <li>In order to achieve a voltage up to 25 V from voltage range of 1-3V, designed a charge pump system which has configurable stages.</li>
-       <li>The charge pump receives this 1-3 voltage input from a Pre-Amp which gets input of 10 mV-100 mV range from a MEMS sensor. Used Arduino for charge pump configuration.</li>
-     </ul>
+
+</section>
+
+
+<!-- STATS -->
+
+<section id="stats">
+
+  <div class="stats-container">
+
+    <div class="stat">
+      <div class="stat-number">200K+</div>
+      <div class="stat-label">Telemetry records / device / day</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-number">11</div>
+      <div class="stat-label">Independently deployable services</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-number">8×</div>
+      <div class="stat-label">Reduction in production downtime</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-number">5+</div>
+      <div class="stat-label">Years of software engineering</div>
+    </div>
+
   </div>
-  <div class="project-tile1">
-     <h1 class="title1">Speech Recognition</h1>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section
+  id="about-section"
+  class="content-section"
+>
+
+  <div class="section-label">
+    About
+  </div>
+
+  <h2 class="section-title">
+    Engineering systems from idea to production.
+  </h2>
+
+  <div class="about-text">
+
+    <p>
+      I'm a Senior Software Engineer focused on backend engineering,
+      distributed systems, AI/ML and robotics.
+    </p>
+
+    <p>
+      I've worked on high-throughput systems involving asynchronous
+      processing, event-driven architectures, machine learning inference,
+      real-time telemetry, authentication and authorization, observability
+      and cloud infrastructure.
+    </p>
+
+    <p>
+      I'm particularly interested in the intersection of software
+      engineering and AI — building reliable systems around machine
+      learning models, LLM applications, AI agents and intelligent
+      autonomous systems.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section
+  id="experience"
+  class="content-section"
+>
+
+  <div class="section-label">
+    Experience
+  </div>
+
+  <h2 class="section-title">
+    Professional experience
+  </h2>
+
+  <div class="experience-card">
+
+    <h3>Senior Software Engineer</h3>
+
+    <div class="company">
+      Resonating Mindz Pvt. Ltd.
+    </div>
+
+    <div class="date">
+      Jan 2023 — Present
+    </div>
+
     <ul>
-     <li>An audio file with the corresponding voice recording is stored in the specified path, which is later matched with the one being called, by using correlation and Fast Fourier Transform (FFT).</li>
-       <li>Used Matlab and CCS software.</li>
-     </ul>
+
+      <li>
+        Architected and implemented a scalable microservices platform
+        consisting of 11 independently deployable services.
+      </li>
+
+      <li>
+        Designed Kafka-based asynchronous processing pipelines capable
+        of handling 200K+ telemetry records per device per day.
+      </li>
+
+      <li>
+        Implemented Redis-backed idempotency mechanisms and retry/backoff
+        strategies to handle message redelivery and transient downstream
+        failures.
+      </li>
+
+      <li>
+        Built ML inference services and integrated machine-learning
+        workflows into production backend systems.
+      </li>
+
+      <li>
+        Designed granular RBAC with resource-level permissions,
+        JWT-based authentication and Spring Security.
+      </li>
+
+      <li>
+        Built centralized licensing and API authorization mechanisms
+        across 100+ REST, WebSocket and administrative APIs.
+      </li>
+
+      <li>
+        Improved production reliability and reduced average downtime
+        from approximately 6 hours/month to less than 1 hour/month.
+      </li>
+
+    </ul>
+
+    <div class="tech-stack">
+
+      <span class="tech">Java</span>
+      <span class="tech">Spring Boot</span>
+      <span class="tech">Kafka</span>
+      <span class="tech">Redis</span>
+      <span class="tech">PostgreSQL</span>
+      <span class="tech">Docker</span>
+      <span class="tech">NGINX</span>
+      <span class="tech">Grafana</span>
+      <span class="tech">Python</span>
+      <span class="tech">ML</span>
+
+    </div>
+
   </div>
-  <div class="project-tile1">
-     <h1 class="title1">Security Bell</h1>
-     <ul>
-     <li>Designed a bell using light dependent register (LDR) which starts buzzing whenever there is a light obstruction to the sensor.</li>
-     <li>Components used were a battery,an LDR, an LED, two registers and one transitor.</li>
-  </div>
-  </div>
-  
-     
-  
+
 </section>
-  <section id="contact">
-    
-<a href="hhttps://www.linkedin.com/in/jagdish-chandra-b58168199/" target="_blank" id="profile-link" class="fa fa-linkedin"></a>
-  <a href="https://www.linkedin.com/in/jagdish-chandra-b58168199/" target="_blank" class="label">Linkedin</a>
-    <a href="https://github.com/Jagdish-Chandra" target="_blank" id="profile-link" class="fa fa-github"></a>
-  <a href="https://github.com/Jagdish-Chandra"target="_blank"  class="label">GitHub</a>
-    <a href="https://www.facebook.com/profile.php?id=100015142143416" target="_blank" id="profile-link" class="fa fa-facebook"></a>
-  <a href="https://www.facebook.com/profile.php?id=100015142143416" target="_blank"  class="label">Facebook</a>
-   <a href="mailto: jagdish02101998@gmail.com" target="_blank" class="fa fa-envelope"></a>
-  <a href="mailto: jagdish02101998@gmail.com" target="_blank"  class="label">Send a mail</a>
-  <a href="tel:919481245504" target="_blank" class="fa fa-mobile-phone"></a>
-  <a href="tel:919481245504" target="_blank"  class="label">Call me</a>
+
+
+<!-- SELECTED WORK -->
+
+<section
+  id="projects"
+  class="content-section"
+>
+
+  <div class="section-label">
+    Selected Work
+  </div>
+
+  <h2 class="section-title">
+    Systems I've built
+  </h2>
+
+  <p class="section-description">
+    A selection of engineering work spanning distributed systems,
+    machine learning, computer vision and robotics.
+  </p>
+
+
+  <div class="project-grid">
+
+
+    <!-- PROJECT 1 -->
+
+    <div class="project-card">
+
+      <div class="project-number">
+        01 / DISTRIBUTED SYSTEMS
+      </div>
+
+      <h3>Industrial IoT & Analytics Platform</h3>
+
+      <p>
+        Designed a production-grade microservices platform for real-time
+        industrial telemetry, analytics and ML-powered insights.
+      </p>
+
+      <div class="project-impact">
+        200K+ telemetry records/device/day ·
+        11 microservices · 8× downtime reduction
+      </div>
+
+      <p>
+        Built event-driven processing using Kafka, Redis-backed
+        idempotency, retry/backoff handling, PostgreSQL persistence,
+        ML inference and real-time observability.
+      </p>
+
+      <div class="tech-stack">
+        <span class="tech">Java</span>
+        <span class="tech">Spring Boot</span>
+        <span class="tech">Kafka</span>
+        <span class="tech">Redis</span>
+        <span class="tech">PostgreSQL</span>
+        <span class="tech">Docker</span>
+        <span class="tech">Grafana</span>
+        <span class="tech">ML</span>
+      </div>
+
+    </div>
+
+
+    <!-- PROJECT 2 -->
+
+    <div class="project-card">
+
+      <div class="project-number">
+        02 / MACHINE LEARNING
+      </div>
+
+      <h3>Predictive Maintenance</h3>
+
+      <p>
+        Built a machine-learning workflow for predicting repair outcomes
+        from a large repair-order dataset.
+      </p>
+
+      <div class="project-impact">
+        300K repair orders · high-dimensional sparse features · LightGBM
+      </div>
+
+      <p>
+        Worked with large sparse feature matrices, categorical
+        preprocessing and production-oriented model training and
+        inference workflows.
+      </p>
+
+      <div class="tech-stack">
+        <span class="tech">Python</span>
+        <span class="tech">LightGBM</span>
+        <span class="tech">Scikit-learn</span>
+        <span class="tech">Machine Learning</span>
+        <span class="tech">Sparse Matrices</span>
+      </div>
+
+    </div>
+
+
+    <!-- PROJECT 3 -->
+
+    <div class="project-card">
+
+      <div class="project-number">
+        03 / COMPUTER VISION
+      </div>
+
+      <h3>Real-Time Vision & Tracking Pipeline</h3>
+
+      <p>
+        Developed a computer-vision pipeline for object detection,
+        tracking and event generation in a robotics environment.
+      </p>
+
+      <div class="project-impact">
+        YOLO-based detection + ByteTrack tracking + ROS2 integration
+      </div>
+
+      <p>
+        Integrated object detection and tracking into a ROS2-based
+        architecture for downstream event processing and robot behavior.
+      </p>
+
+      <div class="tech-stack">
+        <span class="tech">Python</span>
+        <span class="tech">YOLO</span>
+        <span class="tech">ByteTrack</span>
+        <span class="tech">ROS2</span>
+        <span class="tech">OpenCV</span>
+      </div>
+
+    </div>
+
+
+    <!-- PROJECT 4 -->
+
+    <div class="project-card">
+
+      <div class="project-number">
+        04 / ROBOTICS & RL
+      </div>
+
+      <h3>Autonomous Robotics & Reinforcement Learning</h3>
+
+      <p>
+        Worked with simulation-based robotics and reinforcement learning
+        using Isaac Sim, Isaac Lab and ROS2.
+      </p>
+
+      <div class="project-impact">
+        Simulation-based training · PPO · LiDAR-based perception
+      </div>
+
+      <p>
+        Explored navigation, obstacle avoidance and policy learning
+        workflows for autonomous robotic systems using simulation
+        environments and reinforcement learning.
+      </p>
+
+      <div class="tech-stack">
+        <span class="tech">ROS2</span>
+        <span class="tech">Isaac Sim</span>
+        <span class="tech">Isaac Lab</span>
+        <span class="tech">RL</span>
+        <span class="tech">PPO</span>
+        <span class="tech">LiDAR</span>
+      </div>
+
+    </div>
+
+
+    <!-- PROJECT 5 -->
+
+    <div class="project-card">
+
+      <div class="project-number">
+        05 / BACKEND ENGINEERING
+      </div>
+
+      <h3>Reliable Event Processing</h3>
+
+      <p>
+        Designed reliability patterns for distributed event processing
+        where duplicate messages, retries and downstream failures must
+        be handled safely.
+      </p>
+
+      <div class="project-impact">
+        Idempotency · retry/backoff · asynchronous processing
+      </div>
+
+      <p>
+        Applied distributed-systems patterns to ensure safe message
+        processing while maintaining throughput and resilience.
+      </p>
+
+      <div class="tech-stack">
+        <span class="tech">Kafka</span>
+        <span class="tech">Redis</span>
+        <span class="tech">Java</span>
+        <span class="tech">Spring Boot</span>
+        <span class="tech">Distributed Systems</span>
+      </div>
+
+    </div>
+
+
+    <!-- PROJECT 6 -->
+
+    <div class="project-card">
+
+      <div class="project-number">
+        06 / AI ENGINEERING
+      </div>
+
+      <h3>AI & Agentic Systems</h3>
+
+      <p>
+        Exploring production-oriented AI engineering patterns around
+        LLM applications, RAG, AI agents and tool-enabled systems.
+      </p>
+
+      <div class="project-impact">
+        LLM applications · RAG · agents · MCP · AI system design
+      </div>
+
+      <p>
+        Focused on building reliable AI applications with retrieval,
+        tool use, guardrails, evaluation and integration with existing
+        software systems.
+      </p>
+
+      <div class="tech-stack">
+        <span class="tech">LLMs</span>
+        <span class="tech">RAG</span>
+        <span class="tech">AI Agents</span>
+        <span class="tech">MCP</span>
+        <span class="tech">Python</span>
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
-    <hr>
+
+
+<!-- SKILLS -->
+
+<section
+  id="skills"
+  class="content-section"
+>
+
+  <div class="section-label">
+    Engineering
+  </div>
+
+  <h2 class="section-title">
+    Technical toolkit
+  </h2>
+
+  <p class="section-description">
+    Technologies I use across backend systems, distributed architectures,
+    AI/ML and robotics.
+  </p>
+
+
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <h3>Backend & Distributed Systems</h3>
+      <p>
+        Java · Spring Boot · Microservices · REST APIs · Kafka ·
+        Redis · PostgreSQL · WebSockets · Distributed Systems
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <h3>AI & Machine Learning</h3>
+      <p>
+        Python · LightGBM · Scikit-learn · ML inference ·
+        Computer Vision · LLMs · RAG · AI Agents
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Robotics</h3>
+      <p>
+        ROS2 · Isaac Sim · Isaac Lab · Reinforcement Learning ·
+        LiDAR · YOLO · ByteTrack · Robot Navigation
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Infrastructure & Cloud</h3>
+      <p>
+        Docker · Linux · NGINX · Grafana · Azure · GCP ·
+        PostgreSQL · Containerized deployments
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+  <h2>Let's build something interesting.</h2>
+
+  <p>
+    I'm interested in challenging engineering problems involving
+    distributed systems, AI and intelligent software.
+  </p>
+
+  <div class="social-links">
+
+    <a
+      href="https://github.com/Jagdish-Chandra"
+      target="_blank"
+    >
+      <i class="fa-brands fa-github"></i>
+      GitHub
+    </a>
+
+    <a
+      href="https://www.linkedin.com/in/jagdish-chandra-b58168199/"
+      target="_blank"
+    >
+      <i class="fa-brands fa-linkedin"></i>
+      LinkedIn
+    </a>
+
+    <a href="mailto:jagdish02101998@gmail.com">
+      <i class="fa-solid fa-envelope"></i>
+      Email
+    </a>
+
+  </div>
+
+</section>
+
+
+<footer>
+  © 2026 Jagdish Chandra · Built with HTML & CSS
+</footer>
+
+
 </body>
 </html>
